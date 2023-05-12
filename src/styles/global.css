@@ -1,0 +1,32 @@
+:root {
+  --hue: 200;
+  --purple: hsl(var(--hue), 92%, 75%);
+  --purpleDark: hsl(var(--hue), 53%, 59%);
+  --blue: hsl(var(--hue), 69%, 59%);
+  --blueDark: hsl(var(--hue), 68%, 37%);
+  --gray700: hsl(var(--hue), 0%, 5%);
+  --gray600: hsl(var(--hue), 0%, 10%);
+  --gray500: hsl(var(--hue), 0%, 15%);
+  --gray400: hsl(var(--hue), 0%, 20%);
+  --gray300: hsl(var(--hue), 0%, 50%);
+  --gray200: hsl(var(--hue), 0%, 85%);
+  --gray100: hsl(var(--hue), 0%, 95%);
+  --background: hsl(var(--hue), 0%, 27%);
+  --danger: hsl(0, 70%, 62%);
+  --fontFamily: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 140%;
+  font-family: var(--fontFamily);
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+}
+
+body {
+  background-color: var(--gray600);
+}

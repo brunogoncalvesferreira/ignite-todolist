@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  background-color: var(--gray500);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.trash {
+  color: var(--gray300);
+}
+
+.trash:hover {
+  color: var(--danger);
+}
+
+p {
+  margin: 0 0.75rem;
+  font-size: 0.875rem;
+  color: var(--gray100);
+  flex: 1;
+}
+
+.isCompleted {
+  text-decoration: line-through;
+}

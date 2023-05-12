@@ -1,0 +1,66 @@
+.wrapper {
+  max-width: 736px;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.wrapper form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: calc(-2.8rem + 16px);
+}
+
+.wrapper form input {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--gray500);
+  border: 0;
+  font-size: 1rem;
+  color: var(--gray300);
+}
+
+.wrapper form button {
+  width: 5.62rem;
+  background-color: var(--blueDark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--gray100);
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.wrapper form button:hover {
+  background-color: var(--blue);
+}
+
+.wrapper .countTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.wrapper .countTask strong {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+
+.wrapper .countTask strong span {
+  background-color: var(--gray400);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
