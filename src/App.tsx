@@ -24,7 +24,7 @@ export function App() {
   }
 
   useEffect(() => {
-    loadLocalStorage
+    loadLocalStorage()
   }, [])
 
   function setLocalStorageTask(newTask: TaskProps[]) {
@@ -41,14 +41,12 @@ export function App() {
   }
 
   function handleNewTask() {
-    setLocalStorageTask([
-      ...tasks,
-      {
-        id: crypto.randomUUID(),
-        title: text,
-        isCompleted: false,
-      },
-    ])
+    const newTask = {
+      id: crypto.randomUUID(),
+      title: text,
+      isCompleted: false,
+    }
+    setLocalStorageTask([...tasks, newTask])
     setText("")
   }
 
