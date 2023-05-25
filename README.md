@@ -6,7 +6,7 @@
      <a href="#-features">Features</a> • 
      <a href="#-como-usar">Como usar</a> •     
      <a href="#-colaboradores">Colaboradores</a> •
-     <a href="#-licença">Licença</a> •
+     <a href="#-licença">Licença</a> 
 </p>
 
 <br>
