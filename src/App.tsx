@@ -16,20 +16,22 @@ export function App() {
   const [text, setText] = useState("")
   const [tasks, setTasks] = useState<TaskProps[]>([])
 
-  function loadLocalStorage() {
-    const saved = localStorage.getItem("task")
-    if (saved) {
-      setTasks(JSON.parse(saved))
-    }
+  function loadingGetTask() {
+    const saved = localStorage.getItem("tasks")
+    saved ? setTasks(JSON.parse(saved)) : ""
   }
 
   useEffect(() => {
+<<<<<<< HEAD
     loadLocalStorage()
+=======
+    loadingGetTask
+>>>>>>> 72c53cf (:boom: update readme)
   }, [])
 
-  function setLocalStorageTask(newTask: TaskProps[]) {
+  function localStorageSetTask(newTask: TaskProps[]) {
     setTasks(newTask)
-    localStorage.setItem("task", JSON.stringify(newTask))
+    localStorage.setItem("tasks", JSON.stringify(newTask))
   }
 
   function handleSubmit(event: FormEvent) {
@@ -41,12 +43,23 @@ export function App() {
   }
 
   function handleNewTask() {
+<<<<<<< HEAD
     const newTask = {
       id: crypto.randomUUID(),
       title: text,
       isCompleted: false,
     }
     setLocalStorageTask([...tasks, newTask])
+=======
+    localStorageSetTask([
+      ...tasks,
+      {
+        id: crypto.randomUUID(),
+        title: text,
+        isCompleted: false,
+      },
+    ])
+>>>>>>> 72c53cf (:boom: update readme)
     setText("")
   }
 
@@ -54,7 +67,7 @@ export function App() {
     const actionDeleteTask = tasks.filter((task) => {
       return task.id !== taskID
     })
-    setLocalStorageTask(actionDeleteTask)
+    localStorageSetTask(actionDeleteTask)
   }
 
   function handleIsCompleted(isCompletedID: string) {
@@ -67,7 +80,7 @@ export function App() {
       }
       return task
     })
-    setLocalStorageTask(actionIsCompleted)
+    localStorageSetTask(actionIsCompleted)
   }
 
   const taskQuality = tasks.length

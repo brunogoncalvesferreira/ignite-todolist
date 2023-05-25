@@ -1,5 +1,5 @@
 :root {
-  --hue: 200;
+  --hue: 220;
   --purple: hsl(var(--hue), 92%, 75%);
   --purpleDark: hsl(var(--hue), 53%, 59%);
   --blue: hsl(var(--hue), 69%, 59%);
