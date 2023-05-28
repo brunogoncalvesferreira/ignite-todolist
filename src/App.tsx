@@ -22,11 +22,7 @@ export function App() {
   }
 
   useEffect(() => {
-<<<<<<< HEAD
-    loadLocalStorage()
-=======
-    loadingGetTask
->>>>>>> 72c53cf (:boom: update readme)
+    loadingGetTask()
   }, [])
 
   function localStorageSetTask(newTask: TaskProps[]) {
@@ -43,23 +39,12 @@ export function App() {
   }
 
   function handleNewTask() {
-<<<<<<< HEAD
     const newTask = {
       id: crypto.randomUUID(),
       title: text,
       isCompleted: false,
     }
-    setLocalStorageTask([...tasks, newTask])
-=======
-    localStorageSetTask([
-      ...tasks,
-      {
-        id: crypto.randomUUID(),
-        title: text,
-        isCompleted: false,
-      },
-    ])
->>>>>>> 72c53cf (:boom: update readme)
+    localStorageSetTask([...tasks, newTask])
     setText("")
   }
 
