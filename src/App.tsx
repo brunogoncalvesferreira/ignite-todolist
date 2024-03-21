@@ -39,6 +39,11 @@ export function App() {
   }
 
   function handleNewTask() {
+    if(text === "") {
+      alert('Preencha o campo para adicionar uma nova tarefa')
+      return
+    }
+
     const newTask = {
       id: crypto.randomUUID(),
       title: text,
